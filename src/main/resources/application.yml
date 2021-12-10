@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/werth-code/config-server.git
+          search-paths: config2
+
+#The uri is our git repo holding the config files
+#The search path is the folder in the git repo we want to grab properties from.
